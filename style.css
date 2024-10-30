@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Emoji:wght@300..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Sixtyfour+Convergence&display=swap');
+
+
+:root {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(147, 148, 142);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 1535px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+main {
+    margin-left: 250px;
+}
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(147, 148, 142);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.nav-logo-img {
+    width: 200px;
+    height: 170px;
+}
+
+.nav-logo-title {
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav-logo-p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+}
+
+.nav-links {
+    width: 100%;
+    margin-top: 50px;
+}
+
+hr {
+    width: 250px;
+    margin-left: -20px;
+}
+
+.nav-links a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+    margin:10px 0;
+    text-align: center;
+}
+
+.main-link {
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+}
+
+.submenu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    color: black;
+    margin-left: 0;
+    font-size: 0.9em;
+    width: 250px;
+    height: 35px;
+    margin-left: -20px;
+    padding: 0 20px;
+}
+
+.submenu a:hover {
+    background: #ffffff5c;
+}
+
+.contacts {
+    margin-top: 80px;
+}
+
+.contact-h3 {
+    color: #515155;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contacts p, a {
+    text-decoration: none;
+    color: var(--Medium-Dark, #3d3d3d);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    /* 25.2px */
+}
+
+.hero-section {
+    height: 450px;
+    background: url(./src/img/foto-lyceum/foto-lyceum.jpg) center / cover no-repeat;
+    
+}
+.news-title {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 35px;
+    font-size: 35px;
+}
+
+
+.line-body {
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 0;
+}
+
+.of-lyceum {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 350px;
+    margin-left: 35px;
+}
+
+.of-lyceum-title {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+}
+
+.of-lyceum-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.of-lyceum-img {
+    width: 500px;
+    height: 250px;
+}
+
+.of-lyceum-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 20px;
+
+}
+
+.of-lyceum-p {
+    width: 100%;
+    color: #515155;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.useful {
+    height: 200px;
+    margin-left: 35px;
+}
+
+.useful-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.resources a img {
+    width: 150px;
+    height: 65px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: RGB(204, 206, 208);
+    color: white;
+}
