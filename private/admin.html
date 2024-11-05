@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Панель адміністратора</title>
     <link rel="stylesheet" href="./admin.css">
+
+    <script>
+        const correctPassword = 'school'; // Введіть правильний пароль
+
+        // Функція для запиту пароля
+        function requestPassword() {
+            const enteredPassword = prompt('Введіть пароль для доступу до панелі адміністратора:');
+            if (enteredPassword === correctPassword) {
+                sessionStorage.setItem('loggedIn', 'true'); // Зберегти авторизацію
+            } else {
+                alert('Невірний пароль!');
+                window.location.href = '../index.html'; // Перенаправлення на index.html
+            }
+        }
+
+        // Викликаємо функцію запиту пароля
+        requestPassword();
+    </script>
+
+
 </head>
 
 <body>
