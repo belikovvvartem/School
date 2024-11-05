@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             createUserWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     console.log('Registration successful');
-                    window.location.href = "admin.html"; // Перехід на сторінку з привітанням
+                    window.location.href = "private/admin.html"; // Перехід на сторінку з привітанням
                 })
                 .catch((error) => {
                     errorMessage.textContent = error.message;
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     console.log('Login successful');
-                    window.location.href = "admin.html"; // Перехід на сторінку з привітанням
+                    window.location.href = "private/admin.html"; // Перехід на сторінку з привітанням
                 })
                 .catch((error) => {
                     errorMessage.textContent = error.message;

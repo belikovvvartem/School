@@ -77,4 +77,3 @@ function displayNewsList() {
 // Викликаємо функцію для відображення списку новин при завантаженні
 displayNewsList();
 
-
