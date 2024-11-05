@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель адміністратора</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-title">Панель управління</div>
+        <a href="./index.html" target="_blank" rel="noopener noreferrer"> <button class="header-button-exit">Вихід</button></a>
+    </header>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <a href="./index.html"><img src="./src/img/logo/logo-lyceum.png" alt="logo" class="nav-logo-img"></a>
+            <div class="nav-logo-title">Добрянський ліцей</div>
+            <div class="nav-logo-p">Знання – це скарб, а вміння вчитися – ключ до нього.</div>
+        </div>
+        <nav class="nav-links">
+            <hr color="black">
+            <a href="#about" class="main-link" onclick="toggleSubmenu('aboutSubmenu')">Про Нас</a>
+            <div id="aboutSubmenu" class="submenu">
+                <a href="#history">Візитівка</a>
+                <a href="#mission">Адміністрація</a>
+                <a href="#staff">Режим роботи</a>
+            </div>
+            <hr color="black">
+            <a href="#activity" class="main-link" onclick="toggleSubmenu('activitySubmenu')">Діяльність</a>
+            <div id="activitySubmenu" class="submenu">
+                <a href="#history">Візитівка</a>
+                <a href="#mission">Адміністрація</a>
+                <a href="#staff">Режим роботи</a>
+            </div>
+            <hr color="black">
+            <a href="#information" class="main-link" onclick="toggleSubmenu('informationSubmenu')">Інформація</a>
+            <div id="informationSubmenu" class="submenu">
+                <a href="#history">Візитівка</a>
+                <a href="#mission">Адміністрація</a>
+                <a href="./login.html" target="_blank">Панель управління</a>
+            </div>
+            <hr color="black">
+        </nav>
+        <div class="contacts">
+
+            <div class="contacts_phone">
+                <div class="contact-h3">Телефон:</div>
+                <p><a href="tel:(38)150">(38)150</a></p>
+            </div>
+
+
+            <div class="contacts_email">
+                <div class="contact-h3">Email:</div>
+                <p><a href="mailto:dobryanske-sch@tyachiv.net.ua">dobryanske-sch@tyachiv.net.ua</a></p>
+            </div>
+
+
+            <div class="contacts_address">
+                <div class="contact-h3">Адреса:</div>
+                <p>село Добрянське, вулиця Макаренка, будинок, 5</p>
+            </div>
+
+        </div>
+    </aside>
+
+<main>
+
+    <h1>Додати новину</h1>
+    <form id="news-form">
+        <label for="news-title">Назва новини:</label>
+        <input type="text" id="news-title" required><br>
+        
+        <label for="news-description">Короткий опис:</label>
+        <input type="text" id="news-description" required><br>
+        
+        <label for="news-full-description">Детальний опис:</label>
+        <textarea id="news-full-description" required></textarea><br>
+        
+        <label for="news-main-image">Головне зображення:</label>
+        <input type="file" id="news-main-image" accept="image/*" required><br>
+        
+        <label for="news-additional-images">Додаткові зображення:</label>
+        <input type="file" id="news-additional-images" accept="image/*" multiple><br>
+        
+        <label for="news-date">Дата:</label>
+        <input type="text" id="news-date" placeholder="дд.мм.гггг" required><br>
+        
+        <button type="button" onclick="addNews()">Додати новину</button>
+    </form>
+
+    <hr class="line">
+
+    <h2>Список новин</h2>
+    <div id="news-list"></div>
+</main>
+
+    <script src="./admin.js"></script>
+</body>
+</html>

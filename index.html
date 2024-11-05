@@ -36,7 +36,7 @@
             <div id="informationSubmenu" class="submenu">
                 <a href="#history">Візитівка</a>
                 <a href="#mission">Адміністрація</a>
-                <a href="#staff">Режим роботи</a>
+                <a href="./login.html" target="_blank">Панель управління</a>
             </div>
             <hr color="black">
         </nav>
@@ -70,10 +70,18 @@
             <div class="hero-title"></div>
         </section>
 
-        <section class="news-of-lyceum">
-            <div class="news-title">Новини ліцею</div>
+
+
+        
+        <section id="news-section">
+            <div class="news-section-title">Новини ліцею</div>
+            <div id="news-container"></div>
+            <button id="view-all-btn" onclick="viewAllNews()">Переглянути всі новини</button>
+        <hr class="line-body">
         </section>
-<hr class="line-body">
+
+
+
         <section class="of-lyceum">
             <div class="of-lyceum-title">Про ліцей</div>
             <div class="of-lyceum-content">
@@ -109,6 +117,7 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
