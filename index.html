@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./src/img/favicon/favicon.png" type="image/x-icon">
 </head>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBOdpb26hNyXeVexXmL-T4VtC20QcoKBgw",
+        authDomain: "dobryansky-lyceum.firebaseapp.com",
+        projectId: "dobryansky-lyceum",
+        storageBucket: "dobryansky-lyceum.firebasestorage.app",
+        messagingSenderId: "1004183239138",
+        appId: "1:1004183239138:web:7298e7c0366022efb7e1bb",
+        measurementId: "G-L6ZDFQ8SBZ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
 
 <body>
     <aside class="sidebar">
@@ -72,12 +95,12 @@
 
 
 
-        
+
         <section id="news-section">
             <div class="news-section-title">Новини ліцею</div>
             <div id="news-container"></div>
             <button id="view-all-btn" onclick="viewAllNews()">Переглянути всі новини</button>
-        <hr class="line-body">
+            <hr class="line-body">
         </section>
 
 
@@ -85,13 +108,21 @@
         <section class="of-lyceum">
             <div class="of-lyceum-title">Про ліцей</div>
             <div class="of-lyceum-content">
-            <img src="./src/img/foto-lyceum/foto-lyceum.jpg" alt="" class="of-lyceum-img">
-            <div class="of-lyceum-text">
-            <p class="of-lyceum-p">Добрянський ліцей у Тячівському районі є освітнім закладом, де поєднуються традиційні цінності та сучасні освітні підходи. Основна мета ліцею – забезпечити якісну освіту та створити умови для гармонійного розвитку учнів, формуючи у них важливі життєві навички, соціальну відповідальність та прагнення до знань.</p>
-            <p class="of-lyceum-p">Висококваліфіковані педагоги ліцею застосовують інноваційні методи навчання, що дозволяють учням отримувати знання в цікавій і доступній формі. У навчальному закладі створено сприятливі умови для творчої, спортивної та наукової діяльності, що робить навчальний процес різноманітним і насиченим.</p>
-            <p class="of-lyceum-p">Добрянський ліцей активно співпрацює з місцевою громадою, батьками та організаціями для забезпечення всебічного розвитку учнів, що дає їм можливість досягти успіху як у навчанні, так і в позашкільному житті.</p>
-        </div>
-        </div>
+                <img src="./src/img/foto-lyceum/foto-lyceum.jpg" alt="" class="of-lyceum-img">
+                <div class="of-lyceum-text">
+                    <p class="of-lyceum-p">Добрянський ліцей у Тячівському районі є освітнім закладом, де поєднуються
+                        традиційні цінності та сучасні освітні підходи. Основна мета ліцею – забезпечити якісну освіту
+                        та створити умови для гармонійного розвитку учнів, формуючи у них важливі життєві навички,
+                        соціальну відповідальність та прагнення до знань.</p>
+                    <p class="of-lyceum-p">Висококваліфіковані педагоги ліцею застосовують інноваційні методи навчання,
+                        що дозволяють учням отримувати знання в цікавій і доступній формі. У навчальному закладі
+                        створено сприятливі умови для творчої, спортивної та наукової діяльності, що робить навчальний
+                        процес різноманітним і насиченим.</p>
+                    <p class="of-lyceum-p">Добрянський ліцей активно співпрацює з місцевою громадою, батьками та
+                        організаціями для забезпечення всебічного розвитку учнів, що дає їм можливість досягти успіху як
+                        у навчанні, так і в позашкільному житті.</p>
+                </div>
+            </div>
         </section>
         <hr class="line-body">
 
@@ -99,14 +130,20 @@
             <div class="useful-title">Корисні ресурси</div>
 
             <div class="resources">
-                
-                    <a href="https://www.president.gov.ua/" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p6.gif" alt=""></a>
-                    <a href="http://www.rada.gov.ua/" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p5.gif" alt=""></a>
-                    <a href="https://www.kmu.gov.ua/ua" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p8.jpg" alt=""></a>
-                    <a href="http://www.mon.gov.ua/" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/templates/businessimage/images/mon.jpg" alt=""></a>
-                    <a href="https://lms.e-school.net.ua/" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/uploads/header-logo-add.png" alt=""></a>
-                    <a href="https://osvita.diia.gov.ua/" target="_blank" rel="noopener noreferrer"><img src="https://deponms.carpathia.gov.ua/uploads/430-frame_1.png" alt=""></a>
-                
+
+                <a href="https://www.president.gov.ua/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p6.gif" alt=""></a>
+                <a href="http://www.rada.gov.ua/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p5.gif" alt=""></a>
+                <a href="https://www.kmu.gov.ua/ua" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/templates/businessimage/images/p8.jpg" alt=""></a>
+                <a href="http://www.mon.gov.ua/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/templates/businessimage/images/mon.jpg" alt=""></a>
+                <a href="https://lms.e-school.net.ua/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/uploads/header-logo-add.png" alt=""></a>
+                <a href="https://osvita.diia.gov.ua/" target="_blank" rel="noopener noreferrer"><img
+                        src="https://deponms.carpathia.gov.ua/uploads/430-frame_1.png" alt=""></a>
+
             </div>
         </section>
     </main>

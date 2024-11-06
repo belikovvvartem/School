@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Панель адміністратора</title>
     <link rel="stylesheet" href="./admin.css">
+    <link rel="shortcut icon" href="../src/img/favicon/favicon.png" type="image/x-icon">
 
     <script>
-        const correctPassword = 'school'; // Введіть правильний пароль
+        const correctPassword = '1'; // Введіть правильний пароль
 
         // Функція для запиту пароля
         function requestPassword() {
@@ -31,12 +32,12 @@
 
     <header>
         <div class="header-title">Панель управління</div>
-        <a href="../index.html" target="_blank" rel="noopener noreferrer"> <button id="logoutButton" class="header-button-exit">Вихід</button></a>
+        <a href="../index.html" target="_blank"><button id="logoutButton" class="header-button-exit">Вихід</button></a>
     </header>
 
     <aside class="sidebar">
         <div class="logo">
-            <a href="./index.html"><img src="../src/img/logo/logo-lyceum.png" alt="logo" class="nav-logo-img"></a>
+            <a href="../index.html"><img src="../src/img/logo/logo-lyceum.png" alt="logo" class="nav-logo-img"></a>
             <div class="nav-logo-title">Добрянський ліцей</div>
             <div class="nav-logo-p">Знання – це скарб, а вміння вчитися – ключ до нього.</div>
         </div>
@@ -116,7 +117,7 @@
     <h2>Список новин</h2>
     <div id="news-list"></div>
 </main>
-
+    <script src="../script.js"></script>
     <script src="./admin.js"></script>
 </body>
 </html>
